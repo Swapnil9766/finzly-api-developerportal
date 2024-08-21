@@ -4276,16 +4276,6 @@
             "type" : "string",
             "description" : "users email id",
             "example" : "user123@gamil.com"
-          },
-          "type" : {
-            "type" : "string",
-            "description" : "Type of the user",
-            "example" : "Customer"
-          },
-          "legalEntityId" : {
-            "type" : "string",
-            "description" : "The legal entity associated with the user.",
-            "example" : "1023"
           }
         }
       },
