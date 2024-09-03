@@ -6,28 +6,32 @@ title: Finzly Connect API Changelog
 
 ## **Changelog** 
 
+
 ### **April 26th,2024**
 
 |**Change**|**Category**|**Description**|
 | :- | :- | :- | 
-| Payment Credit API | Enhancement | Following updates happened to the existing payment API [/v3/payments/search] <br><br> <ul><li>Added IMAD, OMAD and originatortoBeneficiary in the get payment by paymentUID API response.</li></ul> |
-| Payment Credit API | Enhancement | Following updates happened to the existing payment API [/v3/payments/creditrequest] and [/v3/payments/debitrequest]<br><br><ul><li>If the payload contains all the address details, then no routing lookup will be applicable. However, if the entire address object is empty, then the routing number lookup will be applicable."</li></ul> |
-
+| Routing number API | Enhancement |Routing Number Inquiry API [/v1/banks/{routingNumber}] <br><br> <ul><li>Added a new endpoint to fetch bank details and the list of delivery methods supported by the requested routing number.</li></ul> |
+| Bulk payment API | Enhancement | Bulk payment API [/v1/payments/customers/{customerUID}/files/{fileType}]<br><br><ul><li>A bank system that allows a payor to make multiple debit payments to a bulk list. Customer Id and file type is needed for this functionality. Supported file types are csv/fedwire/rtp/ach.</li></ul> |
+| Book transfer API | Enhancement | Following updates happened to the existing Book transfer API  [/v3/payments/booktransfer]<br><br><ul><li>Allow Book Transfer for the PUSEDO Accounts.</li></ul> |
+| Customer user and role API | Enhancement | Customer user and role API  [/v1/customer/{customerId}/users]<br><br><ul><li>Created new endpoint to create new customer user, update user, delete user, activate/suspend user, search user and get user by user id.</li></ul> |
+| Customer role API | Enhancement | Customer role API [v1/customer/{customerId}/roles]<br><br><ul><li>Created new endpoint to create new customer role, search role and get role by role id.</li></ul> |
+| Payment Credit/Debit API | Enhancement | Following updates happened to the existing payment API [/v3/payments/creditrequest] and [/v3/payments/debitrequest]<br><br><ul><li>Allow user to create a payment through OpenAPI for Multiple Profile.</li></ul><br><br><ul><li>Inside the receiver's address, only Address Line 1 and country are mandatory. </li></ul> |
 
 
 ### **March 8th,2024**
 
 |**Change**|**Category**|**Description**|
 | :- | :- | :- | 
-| Payment Credit API | Enhancement | Following updates happened to the existing payment API [/v3/payments/search] <br><br> <ul><li>Added IMAD, OMAD and originatortoBeneficiary in the get payment by paymentUID API response.</li></ul> |
-| Payment Credit API | Enhancement | Following updates happened to the existing payment API [/v3/payments/creditrequest] and [/v3/payments/debitrequest]<br><br><ul><li>If the payload contains all the address details, then no routing lookup will be applicable. However, if the entire address object is empty, then the routing number lookup will be applicable."</li></ul> |
+| Payment Search API | Enhancement | Following updates happened to the existing payment API [/v3/payments/search] <br><br> <ul><li>Added IMAD, OMAD and originatortoBeneficiary in the get payment by paymentUID API response.</li></ul> |
+| Payment Credit/Debit API | Enhancement | Following updates happened to the existing payment API [/v3/payments/creditrequest] and [/v3/payments/debitrequest]<br><br><ul><li>If the payload contains all the address details, then no routing lookup will be applicable. However, if the entire address object is empty, then the routing number lookup will be applicable."</li></ul> |
 
 
 ### **July 17th,2023**
 
 |**Change**|**Category**|**Description**|
 | :- | :- | :- | 
-| Payment Credit API | Enhancement | Following updates happened to the existing payment API [/v3/payments/creditrequest] and [/v3/payments/debitrequest]<br><br> <ul><li>User can create payments using receiver account id.</li></ul> |
+| Payment Credit/Debit API | Enhancement | Following updates happened to the existing payment API [/v3/payments/creditrequest] and [/v3/payments/debitrequest]<br><br> <ul><li>User can create payments using receiver account id.</li></ul> |
 | Payment Credit API | Enhancement | Following updates happened to the existing payment API [/v3/payments/creditrequest]<br><br><ul><li>Allow user to create feature dated international ppayment.</li></ul> |
 
 ### **July 7th,2023**
