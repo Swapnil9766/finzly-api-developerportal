@@ -23,7 +23,7 @@ title: Finzly Connect API Changelog
 
 |**Change**|**Category**|**Description**|
 | :- | :- | :- | 
-| Payment Search API | Enhancement | Following updates happened to the existing payment API [/v3/payments/search] <br><br> <ul><li>Added IMAD, OMAD and originatortoBeneficiary in the get payment by paymentUID API response.</li></ul> |
+| Payment get API | Enhancement | Following updates happened to the existing get payment API [/v3/payments/{paymentUID}] <br><br> <ul><li>Added IMAD, OMAD and originatortoBeneficiary in the get payment by paymentUID API response.</li></ul> |
 | Payment Credit/Debit API | Enhancement | Following updates happened to the existing payment API [/v3/payments/creditrequest] and [/v3/payments/debitrequest]<br><br><ul><li>If the payload contains all the address details, then no routing lookup will be applicable. However, if the entire address object is empty, then the routing number lookup will be applicable."</li></ul> |
 
 
